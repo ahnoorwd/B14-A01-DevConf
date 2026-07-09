@@ -181,14 +181,16 @@ a, ul{
 .speakers{
     padding: 90px 0;
     background: #ffffff;
+   
     
     
 }
 
 .section-title{
     text-align: center;
-    font-size: 52px;
+    font-size: 48px;
     font-weight: 800;
+    margin-top: -80px;
     margin-bottom: 60px;
 }
 
@@ -245,4 +247,127 @@ a, ul{
 .speaker-info p{
     color: #6b7280;
     font-size: 15px;
+}
+
+
+/* ===================================
+        Pricing Section
+=================================== */
+
+.pricing{
+    padding: 90px 0;
+    /* background: red; */
+    
+    /* border:1px solid red; */
+}
+
+.pricing-subtitle{
+    text-align: center;
+    color: #6b7280;
+    margin-top: -40px;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+/* Grid */
+
+.pricing-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+/* Card */
+
+.price-card{
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 30px;
+    background: #fff;
+}
+
+.price-card.active{
+    background: #0f172a;
+    color: #fff;
+}
+
+.plan{
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.price-card.active .plan{
+    color: #cbd5e1;
+}
+
+.price-card h3{
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.per-person{
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+}
+
+.price-card.active .per-person{
+    color: #cbd5e1;
+}
+
+.price-card hr{
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 25px 0;
+}
+
+.price-card.active hr{
+    border-color: rgba(255,255,255,.2);
+}
+
+.price-card ul{
+    margin-bottom: 35px;
+}
+
+.price-card ul li{
+    margin-bottom: 14px;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.price-card.active ul li{
+    color: #e2e8f0;
+}
+
+/* Button */
+
+.price-btn{
+    display: block;
+    text-align: center;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.price-btn:hover{
+    background: #2563eb;
+    color: #fff;
+}
+
+.active-btn{
+    background: #2563eb;
+    color: #fff;
+}
+
+.active-btn:hover{
+    background: #1d4ed8;
+}
+.team{
+    background-color: #F8F9FB;
 }
