@@ -101,3 +101,74 @@ a, ul{
 .btn:hover{
     background-color: #1d4ed8;
 }
+
+/* ===================================
+            Hero Section
+=================================== */
+
+.hero{
+    height: 700px;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.20);
+}
+
+.hero-content{
+    text-align: center;
+    color: #fff;
+
+    max-width: 760px;
+    margin: 0 auto;
+
+    /* Push the content down from the top */
+    padding-top: 100px;
+}
+
+.hero-content h1{
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span{
+    font-style: italic;
+}
+
+.hero-content p{
+   
+
+    font-size: 20px;
+    
+    color: #717175;
+}
+
+/* Button */
+
+.hero-btn{
+    display: inline-block;
+
+    margin-top: 260px;
+
+    background: #2d5be3;
+    color: #fff;
+
+    padding: 16px 32px;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.hero-btn:hover{
+    background: #1d4ed8;
+}
