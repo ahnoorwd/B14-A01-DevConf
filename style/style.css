@@ -3,7 +3,7 @@
 *{
     margin:0;
     padding:0;
-    /* box-sizing:border-box; */
+    
 }
 
 body{
@@ -17,14 +17,9 @@ a, ul{
     
 }
 
-/* ul{
-    list-style: none;
-    
-} */
-
-/* ===================================
+/* 
    Reusable Container
-=================================== */
+*/
 .container{
     width: 90%;
     max-width: 1200px;
@@ -34,7 +29,7 @@ a, ul{
 .header{
     background-color: #ffffff;
     padding: 18px 0;
-    border-bottom: 1px solid #e5e7eb;
+    /* border-bottom: 1px solid #e5e7eb; */
 }
 
 .navbar{
@@ -42,8 +37,6 @@ a, ul{
     justify-content: space-between;
     align-items: center;
 }
-
-/* Logo */
 
 .logo{
     display: flex;
@@ -85,8 +78,6 @@ a, ul{
     color: #2563eb;
 }
 
-/* Button */
-
 .btn{
     display: inline-block;
     background-color: #2563eb;
@@ -102,32 +93,25 @@ a, ul{
     background-color: #1d4ed8;
 }
 
-/* ===================================
-            Hero Section
-=================================== */
+/* 
+Hero Section
+ */
 
 .hero{
-    height: 700px;
-    background-image: url("../images/banner.jpg");
+    height: 730px;
+     background:
+        linear-gradient(rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.78)),
+        url("../images/banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.hero-overlay{
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.20);
-}
-
 .hero-content{
     text-align: center;
     color: #fff;
-
     max-width: 760px;
     margin: 0 auto;
-
-    /* Push the content down from the top */
     padding-top: 100px;
 }
 
@@ -143,27 +127,16 @@ a, ul{
 }
 
 .hero-content p{
-   
-
     font-size: 20px;
-    
     color: #717175;
 }
-
-/* Button */
-
 .hero-btn{
     display: inline-block;
-
-    margin-top: 260px;
-
+    margin-top: 300px;
     background: #2d5be3;
     color: #fff;
-
     padding: 16px 32px;
-
     border-radius: 8px;
-
     font-size: 20px;
     font-weight: 600;
     
@@ -173,17 +146,13 @@ a, ul{
     background: #1d4ed8;
 }
 
-
-/* ===================================
-        Speakers Section
-=================================== */
+/* 
+Speakers Section
+ */
 
 .speakers{
     padding: 90px 0;
     background: #ffffff;
-   
-    
-    
 }
 
 .section-title{
@@ -193,29 +162,20 @@ a, ul{
     /* margin-top: -80px; */
     margin-bottom: 60px;
 }
-
-/* Grid */
-
 .speaker-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
    
 }
-
-/* Card */
-
 .speaker-card{
     background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 20px;
-    
     overflow: hidden;
     transition: .3s;
 }
-
 .speaker-card:hover{
-     /* transform: translateY(-6px); */
      box-shadow: 0 15px 35px rgba(0,0,0,.08); 
 }
 
@@ -226,7 +186,6 @@ a, ul{
 }
 
 /* Card Content */
-
 .speaker-info{
     padding: 22px;
 }
@@ -250,14 +209,13 @@ a, ul{
 }
 
 
-/* ===================================
+/*
         Pricing Section
-=================================== */
+*/
 
 .pricing{
     padding: 90px 0;
     /* background: red; */
-    
     /* border:1px solid red; */
 }
 .pricing-header{
@@ -274,14 +232,6 @@ a, ul{
     font-size: 16px;
     color: #575757;
 }
-/* .pricing-subtitle{
-    text-align: center;
-    color: #6b7280;
-    margin-top: -40px;
-    margin-bottom: 50px;
-    font-size: 16px;
-} */
-
 /* Grid */
 
 .pricing-container{
@@ -384,14 +334,9 @@ a, ul{
 .team{
     background-color: #F8F9FB;
 }
-
-
-/* ===================================
+/*
         Sponsors Section
-=================================== */
-/* ==========================
-        Sponsors Section
-========================== */
+*/
 
 .sponsors{
     padding: 90px 0;
@@ -416,23 +361,19 @@ a, ul{
 
 /* Card */
 
+/* i used transaction property after lerning from ai and google */
+
 .sponsor-card{
 
     height:260px;
-
     border-radius:14px;
-
     overflow:hidden;
-
     background:#fff;
-
     box-shadow:0 8px 20px rgba(0,0,0,.08);
-
     transition:.3s;
 }
 
 .sponsor-card:hover{
-
     transform:translateY(-8px);
 }
 
@@ -440,15 +381,13 @@ a, ul{
 
     width:100%;
     height:100%;
-
     object-fit:cover;
-
     display:block;
 }
 
-/* ===================================
+/* 
         Newsletter Section
-=================================== */
+ */
 
 .newsletter{
     padding:90px 0;
@@ -458,84 +397,133 @@ a, ul{
 .newsletter-box{
 
     background:linear-gradient(135deg,#2563eb,#3b82f6);
-
     color:#fff;
-
     padding:60px;
-
     border-radius:16px;
-
     text-align:center;
 }
-
 .newsletter-box h2{
-
     font-size:46px;
-
     margin-bottom:20px;
 }
-
 .newsletter-box p{
-
     width:700px;
-
     margin:0 auto 40px;
-
     font-size:18px;
-
     line-height:1.7;
-
     color:#e5e7eb;
 }
 
 /* Form */
-
 .newsletter-form{
-
     display:flex;
-
     justify-content:center;
-
     gap:15px;
 }
-
 .newsletter-form input{
-
     width:420px;
-
     padding:16px 20px;
-
     border:none;
-
     border-radius:8px;
-
     font-size:16px;
-
     outline:none;
 }
 
 .newsletter-form button{
-
     padding:16px 35px;
-
     border:none;
-
     border-radius:8px;
-
     background:#111827;
-
     color:#fff;
-
     font-size:16px;
-
     font-weight:600;
-
     cursor:pointer;
-
     transition:.3s;
 }
 
 .newsletter-form button:hover{
+    background:#000; 
+}
 
-    background:#000;
+/* 
+            Footer
+ */
+
+.footer{
+    background:#0D1B2A;
+    color:#fff;
+    padding-top:70px;
+}
+/* Grid */
+.footer-container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:60px;
+    padding-bottom:50px;
+}
+
+/* Logo */
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.footer-logo img{
+    width:50px;
+}
+
+.footer-logo h2{
+    font-size:24px;
+}
+
+.footer-logo span{
+    color:#9ca3af;
+    font-size:15px;
+}
+
+/* About */
+.footer-about p{
+    color:#d1d5db;
+    line-height:1.8;
+    max-width:380px;
+}
+/* Titles */
+.footer h3{
+    margin-bottom:20px;
+    font-size:22px;
+}
+/* Links */
+.footer-links ul li{
+    margin-bottom:14px;
+}
+
+.footer-links a{
+    color:#d1d5db;
+    transition:.3s;
+}
+.footer-links a:hover{
+    color:#3b82f6;
+}
+
+/* Contact */
+
+.footer-contact p{
+    color:#d1d5db;
+    margin-bottom:15px;
+    line-height:1.7;
+}
+
+/* Bottom */
+.footer hr{
+    border:none;
+    border-top:1px solid rgba(255,255,255,.1);
+}
+.footer-bottom{
+    text-align:center;
+    padding:25px 0;
+}
+.footer-bottom p{
+    color:#9ca3af;
 }
